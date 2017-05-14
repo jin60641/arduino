@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+
+function sendData(param)
+{
+    xhr = new XMLHttpRequest();
+    xhr.open("POST", "/" + param, false)
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+    xhr.send()
+}
+
+</script>
+</head>
+<body>
+<input id="a" type="button" value="on" onclick="sendData('on')">
+<input id="a" type="button" value="off" onclick="sendData('off')">
+
+</body>
+</html>
